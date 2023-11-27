@@ -1,0 +1,66 @@
+:root {
+    --main-background-color : #F3F5F7;
+    --secondry-background-color : #F3F5F7;
+    --alt-background-color-1 : #F9F9F9;
+    --main-font-color: #000000;
+    --secondry-font-color: #1C1C28;
+}
+
+body {
+    margin: 0;
+    padding: 4.69rem 8.56rem 0rem 2.06rem;
+    background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    font-family: 'Neo Sans Arabic', sans-serif;
+    height: 10000px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .arrow {
+    border-radius: 0.5rem;
+    width: 2rem;
+    background: #E7EAED;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .arrow img {
+    width: 0.807rem;
+}
+
+header > span {
+    margin-left: auto;
+    margin-right: 0.44rem;
+    color: var(--secondry-font-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+header .edit {
+    cursor: pointer;
+    height: 2.125rem;
+    border: 1px solid #E9EAEA;
+    width: 4.875rem;
+    background: var(--alt-background-color-1);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.25rem;
+}
+
+header .edit img {
+    width: 1.125rem;
+}
+
+header .edit span {
+    line-height: 1.75rem;
+    font-size: 0.875rem;
+    color: var(--secondry-font-color);
+    font-weight: 400;
+}
