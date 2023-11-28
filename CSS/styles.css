@@ -68,7 +68,7 @@ header .edit span {
 main {
     display: grid;
     grid-template-columns: 1fr auto;
-    gap: 1.5rem;
+    column-gap: 1.5rem;
 }
 
 .current-ticket {
@@ -416,4 +416,78 @@ main {
     list-style: none;
     margin: 0;
     margin-top: 0.59rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1.62rem;
+}
+
+.search-container h2 {
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1.06rem;
+}
+
+.search-container .search {
+    background-color: transparent;
+    border: none;
+    width: 17.3125rem;
+    height: 2.25rem;
+    position: relative;
+    grid-column: 1/2;
+
+}
+
+.search-container .search .search-bar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    left: 0;
+}
+
+.search .search-bar input[type=search] {
+    background-color: transparent;
+    border: none;
+}
+
+input[type=search]::placeholder {
+    color: rgba(146, 161, 173, 0.40);
+    font-family: 'Neo Sans Arabic', sans-serif;
+    margin-right: 0.27rem;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-bar img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.67rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.search-container button {
+    background-color: transparent;
+    background-image: url("/Assets/Group\ 4144.svg");
+    width: 2.25rem;
+    height: 2.25rem;
+    border: none;
+    margin-right: 0.44rem;
+}
+
+.search-container button img {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
 }
