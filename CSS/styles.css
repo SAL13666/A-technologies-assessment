@@ -74,7 +74,7 @@ header .edit span {
     color: var(--secondry-font-color);
     border-radius: 0.77963rem;
     width: 25.5rem;
-    height: 16.5rem;
+    /* height: 16.5rem; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -180,4 +180,35 @@ header .edit span {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.ticket .line {
+    grid-column: 1/ -1;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket .line::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 0.77963rem;
+    background-color: var(--main-background-color);
+    width: 1.5rem;
+    height: 1.69231rem;
+}
+
+.ticket .line::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 0.77963rem;
+    background-color: var(--main-background-color);
+    width: 1.5rem;
+    height: 1.69231rem;
 }
