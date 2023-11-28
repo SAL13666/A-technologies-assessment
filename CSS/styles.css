@@ -185,7 +185,6 @@ header .edit span {
 .ticket .line {
     grid-column: 1/ -1;
     position: relative;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,4 +210,61 @@ header .edit span {
     background-color: var(--main-background-color);
     width: 1.5rem;
     height: 1.69231rem;
+}
+
+.ticket .ticket-footer {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.12rem;
+}
+
+.ticket .ticket-footer > img {
+    width: 5.125rem;
+    height: 5.125rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.ticket .ticket-footer .share {
+    margin-left: auto;
+    margin-right: 1.06rem;
+    margin-top: 4.12rem;
+    display: flex;
+    padding: 0.25rem 0.375rem;
+    align-items: center;
+    gap: 0.125rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--secondry-font-color);
+}
+
+.ticket .ticket-footer .share img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.ticket .ticket-footer .share span {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 2.75rem;
+    height: 0.8125rem;
+    text-align: center;
+    align-self: start;
+}
+
+.ticket .ticket-footer .discount {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Neo Sans Arabic', sans-serif;
+    gap: 0.81rem;
+    width: 2.25rem;
+    height: 2.6875rem;
+    margin-right: 1.69rem;
+    margin-top: 2.5rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
