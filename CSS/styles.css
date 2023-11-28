@@ -310,6 +310,8 @@ main {
     padding-left: 1.4rem;
     grid-row: 1/2;
     margin-top: 0.81rem;
+    width: fit-content;
+    height: 16.5rem;
 }
 
 .chart .chart-header {
@@ -368,4 +370,50 @@ main {
 .chart-header button img {
     width: 0.61375rem;
     height: 0.57669rem;
+}
+
+.chart-stats {
+    margin-top: 1.98rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chart-line {
+    height: 1px;
+    width: 49.75106rem;
+    background-color: #E5E5EF;
+    margin-top: 2.14rem;
+}
+
+.chart-line:first-of-type {
+    margin: 0;
+}
+
+.chart-stats svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.months {
+    display: flex;
+    gap: 1.78rem;
+    justify-content: space-between;
+    margin: 0;
+    flex-flow: row-reverse;
+}
+
+.months li {
+    color: #9291A5;
+    text-align: center;
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.00813rem;
+    letter-spacing: -0.015rem;
+    list-style: none;
+    margin: 0;
+    margin-top: 0.59rem;
 }
