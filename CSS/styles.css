@@ -75,12 +75,15 @@ header .edit span {
     border-radius: 0.77963rem;
     width: 25.5rem;
     height: 16.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .ticket .ticket-header {
     display: flex;
     padding-top: 1.5rem;
     padding-left: 0.5rem;
+    grid-column: 1/-1;
 }
 
 .ticket .ticket-header .delete {
@@ -127,4 +130,54 @@ header .edit span {
     margin: 0;
     margin-left: 3.38rem;
     width: fit-content;
+}
+
+.ticket-link {
+    grid-column: 1/ -1;
+    margin: auto;
+    background-color: var(--secondry-font-color);
+    width: 14.13719rem;
+    height: 2.625rem;
+    text-align: center;
+    border-radius: 0.51975rem;
+    border: 0.832px dashed #DDD;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ticket-link a {
+    text-decoration: none;
+    color: var(--main-font-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.45531rem;
+}
+
+.ticket-link img {
+    width: 0.74381rem;
+    height: 0.88356rem;
+}
+
+.ticket > p {
+    grid-column: 1 / -1;
+    margin: auto;
+    margin-top: 0.69rem;
+    margin-bottom: 1.06rem;
+    font-family: 'Neo Sans Arabic', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ticket > p > span {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
