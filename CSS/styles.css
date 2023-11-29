@@ -14,7 +14,6 @@ body {
     background-color: var(--main-background-color);
     color: var(--main-font-color);
     font-family: neo sans arabic;
-    height: 10000px;
 }
 
 header {
@@ -91,6 +90,7 @@ main {
     height: 16.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
 }
 
 .ticket .delete {
@@ -615,6 +615,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    border: 1px solid #F3F3F5;
 }
 
 thead {
@@ -914,4 +915,18 @@ tbody td:nth-last-child(){
     .user-ticket button {
         margin: auto;
     }
+    .user svg,
+    .user img {
+        display: none;
+    }
+
+    table {
+        border-collapse: separate;
+    }
+
+    thead tr {
+        font-size: 0.6rem;
+        width: fit-content;
+    }
+
 }
