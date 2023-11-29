@@ -771,6 +771,14 @@ tbody td:nth-last-child(){
     margin-right: 0.47rem;
 }
 
+.select-button span {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.65625rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
 .footer p {
     color: #333;
     font-family: Neo Sans Arabic;
