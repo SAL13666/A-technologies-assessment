@@ -629,7 +629,7 @@ thead tr {
     padding-left: 5.67rem;
     border-color: var(--secondry-font-color);
     border-style: solid;
-    border: 0.44rem 0.38rem 0.28rem 0.44rem;
+    border-width: 0.44rem 0.38rem 0.28rem 0.44rem;
     align-items: center;
     font-family: Neo Sans Arabic;
     font-size: 0.82994rem;
@@ -905,5 +905,13 @@ tbody td:nth-last-child(){
     .book-new-ticket button {
         margin-right: 0.3rem;
         padding: 0.5125rem 0.325rem;
+    }
+
+    .user-ticket {
+        font-size: 0.7rem;
+        flex-direction: column;
+    }
+    .user-ticket button {
+        margin: auto;
     }
 }
