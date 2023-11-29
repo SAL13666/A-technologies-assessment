@@ -12,7 +12,6 @@ body {
     background-color: var(--main-background-color);
     color: var(--main-font-color);
     font-family: neo sans arabic;
-    height: 10000px;
 }
 
 header {
@@ -590,6 +589,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
+    border: 1px solid #F3F3F5;
 }
 
 thead {
