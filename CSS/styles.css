@@ -846,7 +846,7 @@ tbody td:nth-last-child(){
     font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     body {
         padding-left: 0;
         padding-right: 0;
@@ -866,14 +866,13 @@ tbody td:nth-last-child(){
     .current-ticket {
         grid-column: 1 / -1;
         grid-row: 2/3;
-        margin: auto;
         overflow: hidden;
         margin-top: 1rem;
         width: 100%;
     }
-
+    
     .current-ticket .ticket {
-        margin-right: 0;
+        margin: auto;
     }
 
     .months {
@@ -928,5 +927,39 @@ tbody td:nth-last-child(){
         font-size: 0.6rem;
         width: fit-content;
     }
+
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    header .edit {
+        margin-left: 2rem;
+    }
+
+    .book-new-ticket {
+        margin-left: 4rem;
+    }
+
+    .chart {
+        width: 50%;
+        grid-column: 1/ 3;
+    }
+    
+    .months {
+        width: 100%;
+        gap: 0.6rem;
+        padding-right: 0.2rem;
+        justify-content: space-between;
+    }
+    .chart-stats svg {
+        top: 0;
+        left: 0 ;
+    }
+
+    .current-ticket {
+        grid-column: 2/ 3;
+        grid-row: 1/2;
+    }
+
 
 }
